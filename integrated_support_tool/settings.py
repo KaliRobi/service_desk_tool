@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'reporting_tool',
+    'landing_page',
     'rest_framework',
 ]
 
@@ -82,17 +83,17 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     },
-    'externael_db' : {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'hdc',
-        'USER': 'hdcroot' ,
-        'PASSWORD': 'testPass123' ,
-        'HOST': 'local',
-        'PORT': 5432,
-        'OPTIONS': {
-            'readonly': True,
-        },
-    }
+    # 'externael_db' : {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME': 'hdc',
+    #     'USER': 'hdcroot' ,
+    #     'PASSWORD': 'testPass123' ,
+    #     'HOST': 'local',
+    #     'PORT': 5432,
+    #     'OPTIONS': {
+    #         'readonly': True,
+    #     },
+    # }
 }
 
 
